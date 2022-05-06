@@ -11,5 +11,6 @@
 !.bashrc
 !.zshrc
 
-# == kde ==
-!.kde4/
+# == etc ==
+!README.md
+
