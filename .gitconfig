@@ -1,0 +1,14 @@
+[credential]
+	helper = cache --timeout=43200
+[alias]
+	st = status
+	cm = commit
+	cout = checkout
+[user]
+	email = neotod@protonmail.com
+	name = neotod
+[core]
+	filemode = false
+	editor = vim
+[init]
+	defaultBranch = main

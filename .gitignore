@@ -1,0 +1,15 @@
+# ignore everything
+*
+
+## exceptions ##
+
+# == git ==
+!.gitignore
+!.gitconfig
+
+# == shell ==
+!.bashrc
+!.zshrc
+
+# == kde ==
+!.kde4/
