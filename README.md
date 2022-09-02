@@ -2,9 +2,9 @@
 
 This repo contains my linux machine dotfiles.
 
-
 ---
-### How to use?
-`cd ~`
 
-`git clone https://github.com/neotod/neo_dotfiles.git`
+### How to use?
+
+1. Install `make`
+2. Run `make help` and run any command that you wanted.
