@@ -16,7 +16,7 @@ yay -Syu
 aur_programming_langs_pkgs=(python nodejs npm ruby rubygems)
 aur_programming_tools_pkgs=(mongodb-bin mongodb-compass mongodb-tools-bin)
 aur_gui_pkgs=(brave-bin google-chrome telegram-desktop simplescreenrecorder)
-aur_cli_pkgs=(dust lsd clash-for-windows-bin btop docker docker-compose)
+aur_cli_pkgs=(dust lsd clash-for-windows-bin btop docker docker-compose syncthing)
 
 snap_pkgs=(anki-ppd code discord postman skype whatsdesk libreoffice)
 
