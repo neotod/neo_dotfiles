@@ -13,6 +13,9 @@ setup_zsh:
 setup_configs:
 	@source ${mkfile_dir}/scripts/setup_configs.sh ${mkfile_dir}
 
+setup_kde:
+	@source ${mkfile_dir}/scripts/setup_kde.sh ${mkfile_dir}
+
 help:
 	@echo "neo_dotfiles by @neotod"
 	@echo ""
@@ -20,3 +23,4 @@ help:
 	@echo "install_pkgs - Installing necessary packages, from AUR and snap."
 	@echo "setup_configs - Making symlinks from configs' reall path to configs in this repo."
 	@echo "setup_zsh - Setting up 'zsh' related stuff."
+	@echo "setup_kde - Setting up kde and kde softwares(okular, etc) configs. By making symlinks."
