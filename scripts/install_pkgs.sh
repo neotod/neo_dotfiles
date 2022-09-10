@@ -1,16 +1,16 @@
-printf ""
-printf "-> Updating pkgs DB..."
-printf ""
+echo ""
+echo "-> Updating pkgs DB..."
+echo ""
 sudo pacman -Syu
 
-printf ""
-printf "-> Installing yay..."
-printf ""
+echo ""
+echo "-> Installing yay..."
+echo ""
 sudo pacman -S yay
 
-printf ""
-printf "-> Updating already installed packages..."
-printf ""
+echo ""
+echo "-> Updating already installed packages..."
+echo ""
 yay -Syu
 
 aur_programming_langs_pkgs=(python nodejs npm ruby rubygems)
@@ -20,19 +20,19 @@ aur_cli_pkgs=(dust lsd clash-for-windows-bin btop docker docker-compose syncthin
 
 snap_pkgs=(anki-ppd code discord postman skype whatsdesk libreoffice)
 
-printf ""
-printf "-> installing AUR pkgs..."
-printf ""
+echo ""
+echo "-> installing AUR pkgs..."
+echo ""
 yay -S ${aur_programming_langs_pkgs}
 yay -S ${aur_programming_tools_pkgs}
 yay -S ${aur_gui_pkgs}
 yay -S ${aur_cli_pkgs}
 
-printf ""
-printf "-> installing snap pkgs..."
-printf ""
+echo ""
+echo "-> installing snap pkgs..."
+echo ""
 
-printf "\ninstalling and configuring snap itself...\n"
+echo "\ninstalling and configuring snap itself...\n"
 pamac install snapd libpamac-snap-plugin
 sudo systemctl enable --now snapd.socket
 ln -s /var/lib/snapd/snap /snap
@@ -42,6 +42,6 @@ do
   sudo snap install ${pkg_name}
 done
 
-printf "\ninstalling flatpack...\n"
+echo "\ninstalling flatpack...\n"
 pamac install flatpak libpamac-flatpak-plugin
 pamac install discover
