@@ -13,8 +13,8 @@ setup_zsh:
 setup_configs:
 	@source ${mkfile_dir}/scripts/setup_configs.sh ${mkfile_dir}
 
-setup_kde:
-	@source ${mkfile_dir}/scripts/setup_kde.sh ${mkfile_dir}
+setup_kde_apps:
+	@source ${mkfile_dir}/scripts/setup_kde_apps.sh ${mkfile_dir}
 
 setup_proxy:
 	@source ${mkfile_dir}/scripts/setup_proxy.sh ${mkfile_dir}
