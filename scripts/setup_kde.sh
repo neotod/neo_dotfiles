@@ -43,6 +43,6 @@ kde_configs_target_paths=(
 )
 
 for i in "${!config_paths[@]}"; do
-  rm ${config_paths[i]}
+  rm -rf ${config_paths[i]}
   ln -sv "${kde_configs_target_paths[i]}" "${config_paths[i]}"
 done
