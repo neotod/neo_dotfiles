@@ -16,6 +16,9 @@ setup_configs:
 setup_kde:
 	@source ${mkfile_dir}/scripts/setup_kde.sh ${mkfile_dir}
 
+setup_proxy:
+	@source ${mkfile_dir}/scripts/setup_proxy.sh ${mkfile_dir}
+
 help:
 	@echo "neo_dotfiles by @neotod"
 	@echo ""
