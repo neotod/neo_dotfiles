@@ -3,7 +3,6 @@ BASE_DIR=${BASE_DIR:0:-1}
 
 home_target_configs=(
   $BASE_DIR/bash/.bashrc
-  $BASE_DIR/bash/.bash_history
   $BASE_DIR/bash/.bash_profile
 
   $BASE_DIR/git/.gitconfig
@@ -11,7 +10,6 @@ home_target_configs=(
 
 home_configs_paths=(
   $HOME/.bashrc
-  $HOME/.bash_history
   $HOME/.bash_profile
   
   $HOME/.gitconfig
