@@ -19,9 +19,6 @@ setup_kde_apps:
 setup_proxy:
 	@source ${mkfile_dir}/scripts/setup_proxy.sh ${mkfile_dir}
 
-setup_kde_configs:
-	@source ${mkfile_dir}/kde/setup_kde_configs.sh ${mkfile_dir}
-
 help:
 	@echo "neo_dotfiles by @neotod"
 	@echo ""
@@ -31,4 +28,3 @@ help:
 	@echo "setup_zsh - Setting up 'zsh' related stuff."
 	@echo "setup_kde_apps - Setting up kde and kde softwares(okular, etc) configs. By making symlinks."
 	@echo "setup_proxy - Install Clash for proxy. Essentiall for installing and doing anything."
-	@echo "setup_kde_configs - Setup kde safe configs (e.g. keyboard shortcuts) and make symlinks to dotfiles' kde configs."
