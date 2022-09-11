@@ -18,15 +18,15 @@ aur_programming_tools_pkgs=(mongodb-bin mongodb-compass mongodb-tools-bin)
 aur_gui_pkgs=(brave-bin google-chrome telegram-desktop simplescreenrecorder qbittorrent)
 aur_cli_pkgs=(dust lsd btop docker docker-compose syncthing gnome-keyring)
 
-snap_pkgs=(anki-ppd code discord postman skype whatsdesk libreoffice)
+snap_pkgs=(discord postman skype whatsdesk libreoffice)
 
 echo -e ""
 echo -e "-> installing AUR pkgs..."
 echo -e ""
-yay -S ${aur_programming_langs_pkgs}
-yay -S ${aur_programming_tools_pkgs}
-yay -S ${aur_gui_pkgs}
-yay -S ${aur_cli_pkgs}
+yay -S ${aur_programming_langs_pkgs[@]}
+yay -S ${aur_programming_tools_pkgs[@]}
+yay -S ${aur_gui_pkgs[@]}
+yay -S ${aur_cli_pkgs[@]}
 
 echo -e ""
 echo -e "-> installing snap pkgs..."
@@ -37,10 +37,13 @@ pamac install snapd libpamac-snap-plugin
 sudo systemctl enable --now snapd.socket
 ln -s /var/lib/snapd/snap /snap
 
-for pkg_name in ${snap_pkgs}
-do
+for pkg_name in ${snap_pkgs[@]}; do
   sudo snap install ${pkg_name}
 done
+
+sudo ln -sv /var/lib/snapd/snap /snap
+
+sudo snap install --classic code
 
 echo -e "\ninstalling flatpack...\n"
 pamac install flatpak libpamac-flatpak-plugin
