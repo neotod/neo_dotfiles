@@ -26,4 +26,5 @@ help:
 	@echo "install_pkgs - Installing necessary packages, from AUR and snap."
 	@echo "setup_configs - Making symlinks from configs' reall path to configs in this repo."
 	@echo "setup_zsh - Setting up 'zsh' related stuff."
-	@echo "setup_kde - Setting up kde and kde softwares(okular, etc) configs. By making symlinks."
+	@echo "setup_kde_apps - Setting up kde and kde softwares(okular, etc) configs. By making symlinks."
+	@echo "setup_proxy - Install Clash for proxy. Essentiall for installing and doing anything."
