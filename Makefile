@@ -31,4 +31,4 @@ help:
 	@echo "setup_zsh - Setting up 'zsh' related stuff."
 	@echo "setup_kde_apps - Setting up kde and kde softwares(okular, etc) configs. By making symlinks."
 	@echo "setup_proxy - Install Clash for proxy. Essentiall for installing and doing anything."
-	@echo "setup_kde_configs" - Setup kde safe configs (e.g. keyboard shortcuts) and make symlinks to dotfiles' kde configs.
+	@echo "setup_kde_configs - Setup kde safe configs (e.g. keyboard shortcuts) and make symlinks to dotfiles' kde configs."
