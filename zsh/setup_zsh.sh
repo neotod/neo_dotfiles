@@ -48,5 +48,7 @@ for i in ${!home_target_configs[@]}; do
   ln -sv "${home_target_configs[i]}" "${home_configs_paths[i]}"
 done
 
+echo -e "\n go to this link and install MesloLGS fonts manually -> https://github.com/romkatv/powerlevel10k#manual-font-installation"
+
 echo -e "\n\nNote that old config files are copied with .old addedd to end of their name."
 echo -e "\nIf you want to delete the old ones, go and do it urself with hand :)"

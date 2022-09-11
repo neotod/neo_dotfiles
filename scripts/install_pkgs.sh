@@ -6,7 +6,7 @@ sudo pacman -Syu
 echo -e ""
 echo -e "-> Installing yay..."
 echo -e ""
-sudo pacman -S yay
+sudo pacman -S --needed yay
 
 echo -e ""
 echo -e "-> Updating already installed packages..."
@@ -16,17 +16,17 @@ yay -Syu
 aur_programming_langs_pkgs=(python nodejs npm ruby rubygems)
 aur_programming_tools_pkgs=(mongodb-bin mongodb-compass mongodb-tools-bin)
 aur_gui_pkgs=(brave-bin google-chrome telegram-desktop simplescreenrecorder qbittorrent)
-aur_cli_pkgs=(dust lsd btop docker docker-compose syncthing gnome-keyring)
+aur_cli_pkgs=(dust lsd btop docker docker-compose syncthing gnome-keyring keepassxc)
 
 snap_pkgs=(discord postman skype whatsdesk libreoffice)
 
 echo -e ""
 echo -e "-> installing AUR pkgs..."
 echo -e ""
-yay -S ${aur_programming_langs_pkgs[@]}
-yay -S ${aur_programming_tools_pkgs[@]}
-yay -S ${aur_gui_pkgs[@]}
-yay -S ${aur_cli_pkgs[@]}
+yay -S --needed ${aur_programming_langs_pkgs[@]}
+yay -S --needed ${aur_programming_tools_pkgs[@]}
+yay -S --needed ${aur_gui_pkgs[@]}
+yay -S --needed ${aur_cli_pkgs[@]}
 
 echo -e ""
 echo -e "-> installing snap pkgs..."
