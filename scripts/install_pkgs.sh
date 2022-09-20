@@ -48,3 +48,17 @@ sudo snap install --classic code
 echo -e "\ninstalling flatpack...\n"
 pamac install flatpak libpamac-flatpak-plugin
 pamac install discover
+
+
+echo -e "\n-> Installing Anaconda <-\n"
+
+echo -e "\nDownloading and Installing dependencies...\n"
+sudo pacman -Sy libxau libxi libxss libxtst libxcursor libxcomposite libxdamage libxfixes libxrandr libxrender mesa-libgl  alsa-lib libglvnd
+
+echo -e "\nDownloading Anaconda...\n"
+wget -O anaconda https://repo.anaconda.com/archive/Anaconda3-2022.05-Linux-x86_64.sh
+
+echo -e "\nAnaconda downloaded. Installing...\n"
+source anaconda
+
+rm ./anaconda
