@@ -13,7 +13,7 @@ echo -e "-> Updating already installed packages..."
 echo -e ""
 yay -Syu
 
-aur_programming_langs_pkgs=(python nodejs npm ruby rubygems)
+aur_programming_langs_pkgs=(python ipython nodejs npm ruby rubygems)
 aur_programming_tools_pkgs=(mongodb-bin mongodb-compass mongodb-tools-bin)
 aur_gui_pkgs=(brave-bin google-chrome telegram-desktop simplescreenrecorder qbittorrent)
 aur_cli_pkgs=(dust lsd btop docker docker-compose syncthing gnome-keyring keepassxc)
