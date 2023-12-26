@@ -110,6 +110,22 @@ source $ZSH/oh-my-zsh.sh
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+
+# added by neotod
+export GEM_HOME="$(ruby -e 'puts Gem.user_dir')"
+export PATH="$PATH:$GEM_HOME/bin"
+export PATH="$PATH:/root/.local/share/gem/ruby/3.0.0/bin"
+
+export LS_COLORS="$(vivid generate snazzy)"
+export QSYS_ROOTDIR="/home/neotod/.cache/yay/quartus-free/pkg/quartus-free-quartus/opt/intelFPGA/21.1/quartus/sopc_builder/bin"
+
+
+export PATH=$PATH:/home/neotod/.spicetify
+
+
+# export PATH="/home/neotod/anaconda3/bin:$PATH"  # commented out by conda initialize
+
+
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/home/neotod/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
@@ -125,9 +141,8 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
-# added by neotod
-export GEM_HOME="$(ruby -e 'puts Gem.user_dir')"
-export PATH="$PATH:$GEM_HOME/bin"
-export PATH="$PATH:/root/.local/share/gem/ruby/3.0.0/bin"
 
-export LS_COLORS="$(vivid generate snazzy)"
+export WORKON_HOME=$HOME/.virtualenvs
+export VIRTUALENVWRAPPER_PYTHON=$(which python3)
+source virtualenvwrapper.sh
+
